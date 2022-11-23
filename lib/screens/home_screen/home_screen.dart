@@ -34,8 +34,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         // Título basado no dia atual
-        title: Text(
-          "${currentDay.day}  |  ${currentDay.month}  |  ${currentDay.year}",
+        title: Align(
+          alignment: AlignmentDirectional.topStart,
+          child: Text(
+            "${currentDay.day}  |  ${currentDay.month}  |  ${currentDay.year}",
+          ),
         ),
       ),
       body: ListView(
