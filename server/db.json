@@ -1,5 +1,55 @@
 {
   "learnhttp": {
     "content": "Testando a api"
-  }
+  },
+  "journals": [
+    {
+      "id": "e9a65980-6bd6-11ed-a448-1fcbbfd5db23",
+      "content": "Estou aplicando me para aprender flutter....mas não é facil, pois exige muito conhecimento de dart",
+      "created_at": "2022-11-15 06:00:38.327",
+      "updated_at": "2022-11-15 06:00:38.327"
+    },
+    {
+      "id": "79cf8fe0-6bd7-11ed-a448-1fcbbfd5db23",
+      "content": "Hoje é domingo !",
+      "created_at": "2022-11-20 06:00:38.327",
+      "updated_at": "2022-11-20 06:00:38.327"
+    },
+    {
+      "id": "85c45290-6bd7-11ed-b051-d306552b49b0",
+      "content": "Hoje não é terça!\n",
+      "created_at": "2022-11-15 06:08:09.192",
+      "updated_at": "2022-11-15 06:08:09.192"
+    },
+    {
+      "id": "48137270-6bda-11ed-96ae-0319ae5fbf1c",
+      "content": "Bom dia",
+      "created_at": "2022-11-15 06:27:53.981",
+      "updated_at": "2022-11-15 06:27:53.981"
+    },
+    {
+      "id": "e71132e0-6bda-11ed-b870-1545e03bcb49",
+      "content": "ola",
+      "created_at": "2022-11-17 06:32:21.171",
+      "updated_at": "2022-11-17 06:32:21.171"
+    },
+    {
+      "id": "046178a0-6bdb-11ed-8586-bf77c49596e8",
+      "content": "oi",
+      "created_at": "2022-11-17 06:33:10.105",
+      "updated_at": "2022-11-17 06:33:10.105"
+    },
+    {
+      "id": "168072c0-6bdb-11ed-852f-e52957f65608",
+      "content": "oi",
+      "created_at": "2022-11-16 06:33:40.425",
+      "updated_at": "2022-11-16 06:33:40.425"
+    },
+    {
+      "id": "96dd9fb0-6bdb-11ed-b3d8-21724095416f",
+      "content": "po",
+      "created_at": "2022-11-15 06:37:12.231",
+      "updated_at": "2022-11-15 06:37:12.231"
+    }
+  ]
 }

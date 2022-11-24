@@ -1,6 +1,9 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_webapi_first_course/helpers/weekday.dart';
 import 'package:flutter_webapi_first_course/models/journal.dart';
+import 'package:uuid/uuid.dart';
 
 class JournalCard extends StatelessWidget {
   final Journal? journal;
@@ -79,7 +82,10 @@ class JournalCard extends StatelessWidget {
       );
     } else {
       return InkWell(
-        onTap: () {},
+        //ao clicar
+        onTap: () {
+          callAddJournalScreen(context, showedDate);
+        },
         child: Container(
           height: 115,
           alignment: Alignment.center,
@@ -92,4 +98,30 @@ class JournalCard extends StatelessWidget {
       );
     }
   }
+}
+
+void callAddJournalScreen(BuildContext context, showedDate) {
+  //para utilizar argumentos na navegação de rotas , configurado na main -> onGenerateRoute
+  Navigator.pushNamed(
+    context,
+    'add-journal',
+    arguments: Journal(
+        id: const Uuid().v1(),
+        content: "",
+        createdAt: showedDate,
+        updatedAt: showedDate),
+  ).then((value) {
+    if (value != null && value == true) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        elevation: 4,
+        backgroundColor: Colors.green,
+        content: Text(
+          "Registro feito com sucesso!",
+          style: TextStyle(
+        color: Colors.white,
+          ),
+        ),
+      ));
+    }
+  });
 }

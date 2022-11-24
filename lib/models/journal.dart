@@ -10,6 +10,21 @@ class Journal {
     required this.createdAt,
     required this.updatedAt,
   });
+//pesquisar
+  Journal.fromMap(Map<String, dynamic> map)
+      : id = map["id"],
+        content = map["content"],
+        createdAt = DateTime.parse(map["created_at"]),
+        updatedAt = DateTime.parse(map["updated_at"]);
+
+  Map<String, dynamic> toMap() {
+    return {
+      "id": id,
+      "content": content,
+      "created_at": createdAt.toString(),
+      "updated_at": createdAt.toString(),
+    };
+  }
 
   @override
   String toString() {
